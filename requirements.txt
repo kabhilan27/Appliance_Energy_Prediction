@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+torch
+streamlit
+tensorflow
+joblib
+h5py
+jupyter
+ipykernel
