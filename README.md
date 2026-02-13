@@ -33,8 +33,9 @@ APPLIANCE_ENERGY_PREDICTION/
 ├── .gitignore               # Git ignore rules
 ├── README.md                # Project documentation
 └── requirements.txt         # Python dependencies
+```
 
-
+---
 **Features**
 ------------
 
@@ -52,13 +53,28 @@ APPLIANCE_ENERGY_PREDICTION/
 **Installation**
 ----------------
 
-1.  git clone https://github.com//APPLIANCE\_ENERGY\_PREDICTION.gitcd APPLIANCE\_ENERGY\_PREDICTION
-    
-2.  python -m venv venvsource venv/bin/activate # Linux/Macvenv\\Scripts\\activate # Windows
-    
-3.  pip install -r requirements.txt
-    
+Follow these steps to set up the project locally:
 
+1. **Clone the repository**
+```bash
+git clone https://github.com/kabhilan27/Appliance_Energy_Prediction.git
+cd Appliance_Energy_Prediction
+Create and activate a virtual environment
+
+Linux / macOS
+python -m venv venv
+source venv/bin/activate
+
+Windows (Command Prompt)
+python -m venv venv
+venv\Scripts\activate
+
+Install required dependencies
+pip install -r requirements.txt
+```
+
+---
+    
 **Running the App Locally**
 ---------------------------
 
@@ -98,7 +114,7 @@ APPLIANCE_ENERGY_PREDICTION/
 
 The app is deployed on **Streamlit Cloud**:
 
-🌐 View Live App
+🌐 View Live App - https://kabhilan27-appliance-energy-prediction-srcapp-qyley0.streamlit.app/
 
 *   Users can interact with the model online without any local setup.
     
