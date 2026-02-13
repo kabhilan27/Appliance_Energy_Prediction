@@ -4,7 +4,7 @@ matplotlib
 seaborn
 scikit-learn
 torch
-tensorflow
+tensorflow==2.20.0
 joblib
 h5py
 jupyter
