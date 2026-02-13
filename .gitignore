@@ -1,28 +1,51 @@
-# Python virtual environment
+# ----------------------------
+# Python virtual environments
+# ----------------------------
 venv/
 env/
 
-# Byte-compiled files
+# ----------------------------
+# Byte-compiled / cache files
+# ----------------------------
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Data files (optional, if dataset is large)
-*.pkl
-*.csv
-*.h5
-*.keras
-*.joblib
-
+# ----------------------------
 # Jupyter Notebook checkpoints
+# ----------------------------
 .ipynb_checkpoints/
 
+# ----------------------------
 # OS-specific files
+# ----------------------------
 .DS_Store
 Thumbs.db
 
+# ----------------------------
 # Logs
+# ----------------------------
 *.log
 
-# PyCharm/VSCode settings (optional)
+# ----------------------------
+# IDE / Editor settings
+# ----------------------------
 .idea/
 .vscode/
+
+# ----------------------------
+# Large data files (ignore unless needed)
+# ----------------------------
+# Ignore CSVs, datasets, pickles outside models/
+*.csv
+*.pkl
+*.joblib
+*.h5
+*.keras
+
+# ----------------------------
+# Exceptions
+# ----------------------------
+# Include models folder in Git (important for deployment)
+!models/
