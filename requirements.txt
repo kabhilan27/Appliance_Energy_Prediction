@@ -4,10 +4,10 @@ matplotlib
 seaborn
 scikit-learn
 torch
-tensorflow
+tensorflow==2.20.0
 joblib
 h5py
 jupyter
 ipykernel
 streamlit==1.22.0
-protobuf==3.20.3
+protobuf==6.33.5
