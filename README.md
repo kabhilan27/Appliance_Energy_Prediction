@@ -6,7 +6,40 @@ An end-to-end machine learning system to predict appliance energy consumption us
 **Folder Structure**
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   APPLIANCE_ENERGY_PREDICTION/  │  ├── data/  │   ├── raw/                 # Raw input datasets  │   └── processed/           # Cleaned and processed datasets  │  ├── models/                  # Trained machine learning models  │   ├── gradient_booster_model.pkl  │   ├── gru_model.keras  │   ├── linear_regression_model.pkl  │   ├── Istm_optimized_model.h5  │   ├── Istm_optimized_model.keras  │   ├── optimized_model.pkl  │   ├── random_forest_model.pkl  │   ├── scaler_X.pkl         # Feature scaler  │   └── scaler_y.pkl         # Target scaler  │  ├── notebooks/               # Jupyter notebooks for analysis and modeling  │   ├── EDA.ipynb  │   ├── Feature_Engineering.ipynb  │   └── Model.ipynb  │  ├── reports/                 # Analysis reports, figures, and outputs  │  ├── src/                     # Source code for Streamlit app and helper scripts  │   ├── __pycache__/           │   ├── app.py               # Main Streamlit app  │   └── predict.py           # Prediction utility functions  │  ├── venv/                    # Virtual environment  ├── .gitignore               # Git ignore rules  ├── README.md                # Project documentation  └── requirements.txt         # Python dependencies   `
+APPLIANCE_ENERGY_PREDICTION/
+│
+├── data/
+│   ├── raw/                 # Raw input datasets
+│   └── processed/           # Cleaned and processed datasets
+│
+├── models/                  # Trained machine learning models
+│   ├── gradient_booster_model.pkl
+│   ├── gru_model.keras
+│   ├── linear_regression_model.pkl
+│   ├── Istm_optimized_model.h5
+│   ├── Istm_optimized_model.keras
+│   ├── optimized_model.pkl
+│   ├── random_forest_model.pkl
+│   ├── scaler_X.pkl         # Feature scaler
+│   └── scaler_y.pkl         # Target scaler
+│
+├── notebooks/               # Jupyter notebooks for analysis and modeling
+│   ├── EDA.ipynb
+│   ├── Feature_Engineering.ipynb
+│   └── Model.ipynb
+│
+├── reports/                 # Analysis reports, figures, and outputs
+│
+├── src/                     # Source code for Streamlit app and helper scripts
+│   ├── __pycache__/
+│   ├── app.py               # Main Streamlit app
+│   └── predict.py           # Prediction utility functions
+│
+├── venv/                    # Virtual environment
+├── .gitignore               # Git ignore rules
+├── README.md                # Project documentation
+└── requirements.txt         # Python dependencies
+
 
 **Features**
 ------------
@@ -35,7 +68,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 **Running the App Locally**
 ---------------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   streamlit run src/app.py   `
+`   streamlit run src/app.py   `
 
 *   Opens a local web interface.
     
@@ -47,7 +80,14 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 **Models Included**
 -------------------
 
-ModelFileDescriptionGradient Boostergradient\_booster\_model.pklTree-based ensemble modelGRUgru\_model.kerasRecurrent Neural Network modelLSTM OptimizedIstm\_optimized\_model.h5Optimized LSTM modelLinear Regressionlinear\_regression\_model.pklBaseline linear modelRandom Forestrandom\_forest\_model.pklEnsemble tree modelFeature Scalersscaler\_X.pkl, scaler\_y.pklFor input and output normalization
+| Model               | File                         | Description                        |
+|--------------------|------------------------------|------------------------------------|
+| Gradient Booster    | gradient_booster_model.pkl    | Tree-based ensemble model           |
+| GRU                 | gru_model.keras               | Recurrent Neural Network model      |
+| LSTM Optimized      | Istm_optimized_model.h5       | Optimized LSTM model                |
+| Linear Regression   | linear_regression_model.pkl   | Baseline linear model               |
+| Random Forest       | random_forest_model.pkl       | Ensemble tree model                 |
+| Feature Scalers     | scaler_X.pkl, scaler_y.pkl    | Input and output normalization      |
 
 **Notebooks**
 -------------
