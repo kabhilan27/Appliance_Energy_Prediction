@@ -3,15 +3,13 @@ Appliance Energy Prediction System
 
 An end-to-end machine learning system to predict appliance energy consumption using historical sensor data. Built with **Python**, **TensorFlow**, **Scikit-learn**, and deployed on **Streamlit Cloud** for interactive use.
 
-**Folder Structure**
---------------------
-
+## Project Structure
+The repository is organized into a standard structure for professional data science projects:
+```bash
 APPLIANCE_ENERGY_PREDICTION/
-│
 ├── data/
 │   ├── raw/                 # Raw input datasets
 │   └── processed/           # Cleaned and processed datasets
-│
 ├── models/                  # Trained machine learning models
 │   ├── gradient_booster_model.pkl
 │   ├── gru_model.keras
@@ -22,19 +20,15 @@ APPLIANCE_ENERGY_PREDICTION/
 │   ├── random_forest_model.pkl
 │   ├── scaler_X.pkl         # Feature scaler
 │   └── scaler_y.pkl         # Target scaler
-│
 ├── notebooks/               # Jupyter notebooks for analysis and modeling
 │   ├── EDA.ipynb
 │   ├── Feature_Engineering.ipynb
 │   └── Model.ipynb
-│
 ├── reports/                 # Analysis reports, figures, and outputs
-│
 ├── src/                     # Source code for Streamlit app and helper scripts
 │   ├── __pycache__/
 │   ├── app.py               # Main Streamlit app
 │   └── predict.py           # Prediction utility functions
-│
 ├── venv/                    # Virtual environment
 ├── .gitignore               # Git ignore rules
 ├── README.md                # Project documentation
